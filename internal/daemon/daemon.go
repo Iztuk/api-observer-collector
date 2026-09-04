@@ -1,6 +1,7 @@
 package daemon
 
 import (
+	filemonitor "api-observer-collector/internal/file-monitor"
 	"fmt"
 	"os"
 	"os/exec"
@@ -48,6 +49,11 @@ func StartDaemon(bg bool) error {
 			"API Observer Collector running in foreground. PID %d\n",
 			os.Getpid(),
 		)
+	}
+
+	err := filemonitor.MonitorFiles()
+	if err != nil {
+		return err
 	}
 
 	runDaemon()

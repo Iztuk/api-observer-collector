@@ -1,0 +1,9 @@
+services:
+  apache:
+    image: httpd:2.4
+    container_name: api-observer-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./logs:/usr/local/apache2/logs
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro

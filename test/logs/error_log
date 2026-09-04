@@ -1,0 +1,6 @@
+[Thu Sep 03 23:27:37.288455 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Thu Sep 03 23:27:37.288562 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Thu Sep 03 23:27:37.288578 2026] [unixd:alert] [pid 3:tid 3] AH02155: getpwuid: couldn't determine user name from uid 4294967295, you probably need to modify the User directive
+[Thu Sep 03 23:27:37.288709 2026] [unixd:alert] [pid 4:tid 4] AH02155: getpwuid: couldn't determine user name from uid 4294967295, you probably need to modify the User directive
+[Thu Sep 03 23:27:37.288854 2026] [unixd:alert] [pid 5:tid 5] AH02155: getpwuid: couldn't determine user name from uid 4294967295, you probably need to modify the User directive
+[Thu Sep 03 23:27:50.302707 2026] [unixd:alert] [pid 87:tid 87] AH02155: getpwuid: couldn't determine user name from uid 4294967295, you probably need to modify the User directive
